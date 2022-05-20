@@ -23,8 +23,8 @@ export function Autocomplete({
       return setOptions([]);
     }
 
-    // NOTE: I'm using this function to enable the browser
-    // find the best time to do the searching withoult lags in of rendering
+    // NOTE: I'm using this function to let the browser
+    // find the best time to do the searching withoult lags
     window.requestIdleCallback(() => {
       onSearchAsync(text.trim())
         .then((data) =>

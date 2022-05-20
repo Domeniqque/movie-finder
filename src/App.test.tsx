@@ -6,3 +6,5 @@ test("renders movie finder", () => {
   const linkElement = screen.getByText(/movie finder/i);
   expect(linkElement).toBeInTheDocument();
 });
+
+// TODO: tests integrating App components, searching logic and the Autocomplete component

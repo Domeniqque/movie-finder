@@ -18,6 +18,8 @@ export function Dropdown({ options, onSelect }: DropdownProps) {
     return null;
   }
 
+  // NOTE: one best accessibility practice is to enable the user navigate in the options using keyboards.
+  // I would need more time to do this.
   return (
     <ul className="dropdown-list" aria-label="List options">
       {options.map((option) => (
