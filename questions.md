@@ -56,9 +56,9 @@ Third, refectory the jsx elements.
 
 ### 10. List a few ways styles can be used with components.
 
-First, import the css file in the top of our components, (eg. import 'styles.css') and use the css classes in the jsx using the props className. (eg. <div className="container" />)
+First, import the css file in the top of our components, (eg. `import 'styles.css'`) and use the css classes in the jsx using the props className. (eg. `<div className="container" />`)
 
-Second, use the css modules (eg. import styles './styles.module.css') and also use with the className props (eg. <div className={styles.container} />)
+Second, use the css modules (eg. `import styles './styles.module.css'`) and also use with the className props (eg. `<div className={styles.container} />`)
 
 Third, use one css-in-js library like styled-components or emotion.
 
@@ -66,4 +66,4 @@ Or another option, use the build-in style way.
 
 ### 11. How to render an HTML string coming from the server.
 
-We can use the dangerouslySetInnerHTML HTML prop to pass the html received from the server. But, we have to sanitize/unnescape the data before do that.
+We can use the `dangerouslySetInnerHTML` HTML prop to pass the html received from the server. But, we have to sanitize/unnescape the data before do that.
