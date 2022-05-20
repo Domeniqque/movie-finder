@@ -20,7 +20,7 @@ const searchMovieAsync = (text: string) => {
       // NOTE: display only the first 10 items is more user friendly,
       // the user can scan the results quickly
       resolve(result.slice(0, 10));
-    }, 150);
+    }, 100);
   });
 };
 

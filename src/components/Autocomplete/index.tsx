@@ -18,6 +18,8 @@ export function Autocomplete({
   const inputRef = React.useRef<HTMLInputElement>(null);
   const [options, setOptions] = React.useState<DropdownOption[]>([]);
 
+  const callbackRefs = React.useRef<number>();
+
   const searchByInput = (text: string) => {
     if (!text.trim()) {
       return setOptions([]);
@@ -25,16 +27,18 @@ export function Autocomplete({
 
     // NOTE: I'm using this function to let the browser
     // find the best time to do the searching withoult lags
-    window.requestIdleCallback(() => {
+    callbackRefs.current = window.requestIdleCallback(() => {
       onSearchAsync(text.trim())
         .then((data) =>
           data.map((data) => ({
-            highlight: highlighter(text, data.label),
+            highlight: highlighter(text.trim(), data.label),
             value: data.value,
             label: data.label,
           }))
         )
-        .then((data) => setOptions(data));
+        .then((data) => {
+          setOptions(data);
+        });
     });
   };
 

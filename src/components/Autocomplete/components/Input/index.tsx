@@ -1,4 +1,5 @@
 import React from "react";
+import { delay } from "../../../../utils/delay";
 import "./styles.css";
 
 export interface InputProps {
@@ -8,12 +9,14 @@ export interface InputProps {
 
 export const Input = React.forwardRef<HTMLInputElement, InputProps>(
   ({ placeholder, onChange }, ref) => {
-    /**
-     * NOTE: It's a good approach use a debounce here to avoid unnecessary re-renders and requests.
-     * But I've decided not to implement yet because of the short time
-     */
+    const timeOutRef = React.useRef<NodeJS.Timeout>();
+
     const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-      onChange(e.target.value);
+      clearTimeout(timeOutRef.current);
+
+      timeOutRef.current = delay(() => {
+        onChange(e.target.value);
+      }, 60);
     };
 
     return (
