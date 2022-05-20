@@ -24,7 +24,7 @@ export function Dropdown({ options, onSelect }: DropdownProps) {
         <li
           key={option.value}
           role="button"
-          onClick={() => onSelect(option)}
+          onClick={() => onSelect({ ...option, highlight: undefined })}
           // NOTE: it's dangerous to do this without first sanitizing the received data
           // One options is use the lodash unescape eg. { __html: _.unescape(data) }
           dangerouslySetInnerHTML={{
