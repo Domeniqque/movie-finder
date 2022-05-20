@@ -27,7 +27,7 @@ export function Dropdown({ options, onSelect }: DropdownProps) {
           <button
             type="button"
             onClick={() => onSelect({ ...option, highlight: undefined })}
-            // NOTE: it's dangerous to do this without first sanitizing the received data
+            // NOTE: it's dangerous to do this without first sanitizing the received data and is not a production ready code.
             // One options is use the lodash unescape eg. { __html: _.unescape(data) }
             dangerouslySetInnerHTML={{
               __html: option.highlight ?? option.label,
