@@ -27,9 +27,16 @@ const mockValues: DropdownOption[] = [
 describe("Autocomplete", () => {
   test("should render with empty input and enable type", async () => {
     const onSelect = jest.fn();
-    const onSearchAsync = jest.fn().mockImplementation(() => {
-      return new Promise((resolve) => resolve(mockValues));
-    });
+    const onSearchAsync = jest
+      .fn()
+      .mockImplementation(
+        (text: string) =>
+          new Promise((resolve) =>
+            resolve(
+              mockValues.filter((el) => el.label.match(new RegExp(text, "ig")))
+            )
+          )
+      );
 
     render(
       <Autocomplete
@@ -45,11 +52,19 @@ describe("Autocomplete", () => {
     // should type text and call onSearchAsync
     userEvent.type(screen.getByRole("searchbox"), "element 3");
     expect(screen.getByRole("searchbox")).toHaveValue("element 3");
+    expect(await screen.findAllByRole("listitem")).toHaveLength(1);
+    expect(await screen.findByText("Element 3")).toBeDefined();
     expect(onSearchAsync).toBeCalled();
 
     // should select the element and put the value on the input
     userEvent.click(await screen.findByText("Element 3"));
     expect(onSelect).toHaveBeenCalledWith(mockValues[2]);
     expect(screen.getByRole("searchbox")).toHaveValue("Element 3");
+    expect(screen.queryAllByRole("listitem")).toHaveLength(0);
+
+    // should clear the input and hidden the list
+    userEvent.clear(screen.getByRole("searchbox"));
+    expect(screen.getByRole("searchbox")).toHaveValue("");
+    expect(screen.queryAllByRole("listitem")).toHaveLength(0);
   });
 });

@@ -21,16 +21,17 @@ export function Dropdown({ options, onSelect }: DropdownProps) {
   return (
     <ul className="dropdown-list" aria-label="List options">
       {options.map((option) => (
-        <li
-          key={option.value}
-          role="button"
-          onClick={() => onSelect({ ...option, highlight: undefined })}
-          // NOTE: it's dangerous to do this without first sanitizing the received data
-          // One options is use the lodash unescape eg. { __html: _.unescape(data) }
-          dangerouslySetInnerHTML={{
-            __html: option.highlight ?? option.label,
-          }}
-        />
+        <li key={option.value}>
+          <button
+            type="button"
+            onClick={() => onSelect({ ...option, highlight: undefined })}
+            // NOTE: it's dangerous to do this without first sanitizing the received data
+            // One options is use the lodash unescape eg. { __html: _.unescape(data) }
+            dangerouslySetInnerHTML={{
+              __html: option.highlight ?? option.label,
+            }}
+          />
+        </li>
       ))}
     </ul>
   );
