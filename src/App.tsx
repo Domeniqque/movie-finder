@@ -1,9 +1,12 @@
 import "./App.css";
+import { Autocomplete } from "./components/Autocomplete";
 
 function App() {
   return (
-    <div className="App">
+    <div className="container">
       <h1>Movie Search</h1>
+
+      <Autocomplete label="Type a movie name" />
     </div>
   );
 }
