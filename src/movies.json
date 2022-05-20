@@ -1,0 +1,404 @@
+{
+  "data": [
+    {
+      "label": "The Shawshank Redemption",
+      "value": "tt0111161"
+    },
+    {
+      "label": "The Godfather",
+      "value": "tt0068646"
+    },
+    {
+      "label": "The Godfather: Part II",
+      "value": "tt0071562"
+    },
+    {
+      "label": "Pulp Fiction",
+      "value": "tt0110912"
+    },
+    {
+      "label": "The Good, the Bad and the Ugly",
+      "value": "tt0060196"
+    },
+    {
+      "label": "The Dark Knight",
+      "value": "tt0468569"
+    },
+    {
+      "label": "12 Angry Men",
+      "value": "tt0050083"
+    },
+    {
+      "label": "Schindler's List",
+      "value": "tt0108052"
+    },
+    {
+      "label": "The Lord of the Rings: The Return of the King",
+      "value": "tt0167260"
+    },
+    {
+      "label": "Fight Club",
+      "value": "tt0137523"
+    },
+    {
+      "label": "Star Wars: Episode V - The Empire Strikes Back",
+      "value": "tt0080684"
+    },
+    {
+      "label": "The Lord of the Rings: The Fellowship of the Ring",
+      "value": "tt0120737"
+    },
+    {
+      "label": "One Flew Over the Cuckoo's Nest",
+      "value": "tt0073486"
+    },
+    {
+      "label": "Inception",
+      "value": "tt1375666"
+    },
+    {
+      "label": "Goodfellas",
+      "value": "tt0099685"
+    },
+    {
+      "label": "Star Wars",
+      "value": "tt0076759"
+    },
+    {
+      "label": "Seven Samurai",
+      "value": "tt0047478"
+    },
+    {
+      "label": "Forrest Gump",
+      "value": "tt0109830"
+    },
+    {
+      "label": "The Matrix",
+      "value": "tt0133093"
+    },
+    {
+      "label": "The Lord of the Rings: The Two Towers",
+      "value": "tt0167261"
+    },
+    {
+      "label": "City of God",
+      "value": "tt0317248"
+    },
+    {
+      "label": "Se7en",
+      "value": "tt0114369"
+    },
+    {
+      "label": "The Silence of the Lambs",
+      "value": "tt0102926"
+    },
+    {
+      "label": "Once Upon a Time in the West",
+      "value": "tt0064116"
+    },
+    {
+      "label": "Casablanca",
+      "value": "tt0034583"
+    },
+    {
+      "label": "The Usual Suspects",
+      "value": "tt0114814"
+    },
+    {
+      "label": "Ravalueers of the Lost Ark",
+      "value": "tt0082971"
+    },
+    {
+      "label": "Rear Window",
+      "value": "tt0047396"
+    },
+    {
+      "label": "It's a Wonderful Life",
+      "value": "tt0038650"
+    },
+    {
+      "label": "Psycho",
+      "value": "tt0054215"
+    },
+    {
+      "label": "Léon: The Professional",
+      "value": "tt0110413"
+    },
+    {
+      "label": "Sunset Blvd.",
+      "value": "tt0043014"
+    },
+    {
+      "label": "American History X",
+      "value": "tt0120586"
+    },
+    {
+      "label": "Apocalypse Now",
+      "value": "tt0078788"
+    },
+    {
+      "label": "Terminator 2: Judgment Day",
+      "value": "tt0103064"
+    },
+    {
+      "label": "Saving Private Ryan",
+      "value": "tt0120815"
+    },
+    {
+      "label": "Memento",
+      "value": "tt0209144"
+    },
+    {
+      "label": "City Lights",
+      "value": "tt0021749"
+    },
+    {
+      "label": "Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb",
+      "value": "tt0057012"
+    },
+    {
+      "label": "Alien",
+      "value": "tt0078748"
+    },
+    {
+      "label": "Modern Times",
+      "value": "tt0027977"
+    },
+    {
+      "label": "Spirited Away",
+      "value": "tt0245429"
+    },
+    {
+      "label": "North by Northwest",
+      "value": "tt0053125"
+    },
+    {
+      "label": "Back to the Future",
+      "value": "tt0088763"
+    },
+    {
+      "label": "Life Is Beautiful",
+      "value": "tt0118799"
+    },
+    {
+      "label": "The Shining",
+      "value": "tt0081505"
+    },
+    {
+      "label": "The Pianist",
+      "value": "tt0253474"
+    },
+    {
+      "label": "Citizen Kane",
+      "value": "tt0033467"
+    },
+    {
+      "label": "The Departed",
+      "value": "tt0407887"
+    },
+    {
+      "label": "M",
+      "value": "tt0022100"
+    },
+    {
+      "label": "Paths of Glory",
+      "value": "tt0050825"
+    },
+    {
+      "label": "Vertigo",
+      "value": "tt0052357"
+    },
+    {
+      "label": "Django Unchained",
+      "value": "tt1853728"
+    },
+    {
+      "label": "Double Indemnity",
+      "value": "tt0036775"
+    },
+    {
+      "label": "The Dark Knight Rises",
+      "value": "tt1345836"
+    },
+    {
+      "label": "Aliens",
+      "value": "tt0090605"
+    },
+    {
+      "label": "Taxi Driver",
+      "value": "tt0075314"
+    },
+    {
+      "label": "American Beauty",
+      "value": "tt0169547"
+    },
+    {
+      "label": "The Green Mile",
+      "value": "tt0120689"
+    },
+    {
+      "label": "Gladiator",
+      "value": "tt0172495"
+    },
+    {
+      "label": "The Intouchables",
+      "value": "tt1675434"
+    },
+    {
+      "label": "WALL·E",
+      "value": "tt0910970"
+    },
+    {
+      "label": "The Lives of Others",
+      "value": "tt0405094"
+    },
+    {
+      "label": "Toy Story 3",
+      "value": "tt0435761"
+    },
+    {
+      "label": "The Great Dictator",
+      "value": "tt0032553"
+    },
+    {
+      "label": "The Prestige",
+      "value": "tt0482571"
+    },
+    {
+      "label": "A Clockwork Orange",
+      "value": "tt0066921"
+    },
+    {
+      "label": "Lawrence of Arabia",
+      "value": "tt0056172"
+    },
+    {
+      "label": "Amélie",
+      "value": "tt0211915"
+    },
+    {
+      "label": "To Kill a Mockingbird",
+      "value": "tt0056592"
+    },
+    {
+      "label": "Reservoir Dogs",
+      "value": "tt0105236"
+    },
+    {
+      "label": "Das Boot",
+      "value": "tt0082096"
+    },
+    {
+      "label": "The Lion King",
+      "value": "tt0110357"
+    },
+    {
+      "label": "Cinema Paradiso",
+      "value": "tt0095765"
+    },
+    {
+      "label": "Star Wars: Episode VI - Return of the Jedi",
+      "value": "tt0086190"
+    },
+    {
+      "label": "The Treasure of the Sierra Madre",
+      "value": "tt0040897"
+    },
+    {
+      "label": "The Third Man",
+      "value": "tt0041959"
+    },
+    {
+      "label": "Once Upon a Time in America",
+      "value": "tt0087843"
+    },
+    {
+      "label": "Requiem for a Dream",
+      "value": "tt0180093"
+    },
+    {
+      "label": "Eternal Sunshine of the Spotless Mind",
+      "value": "tt0338013"
+    },
+    {
+      "label": "Full Metal Jacket",
+      "value": "tt0093058"
+    },
+    {
+      "label": "Oldboy",
+      "value": "tt0364569"
+    },
+    {
+      "label": "Braveheart",
+      "value": "tt0112573"
+    },
+    {
+      "label": "L.A. Confvalueential",
+      "value": "tt0119488"
+    },
+    {
+      "label": "Bicycle Thieves",
+      "value": "tt0040522"
+    },
+    {
+      "label": "Chinatown",
+      "value": "tt0071315"
+    },
+    {
+      "label": "Singin' in the Rain",
+      "value": "tt0045152"
+    },
+    {
+      "label": "Princess Mononoke",
+      "value": "tt0119698"
+    },
+    {
+      "label": "Monty Python and the Holy Grail",
+      "value": "tt0071853"
+    },
+    {
+      "label": "Metropolis",
+      "value": "tt0017136"
+    },
+    {
+      "label": "Rashomon",
+      "value": "tt0042876"
+    },
+    {
+      "label": "Some Like It Hot",
+      "value": "tt0053291"
+    },
+    {
+      "label": "Amadeus",
+      "value": "tt0086879"
+    },
+    {
+      "label": "2001: A Space Odyssey",
+      "value": "tt0062622"
+    },
+    {
+      "label": "All About Eve",
+      "value": "tt0042192"
+    },
+    {
+      "label": "Witness for the Prosecution",
+      "value": "tt0051201"
+    },
+    {
+      "label": "The Sting",
+      "value": "tt0070735"
+    },
+    {
+      "label": "The Apartment",
+      "value": "tt0053604"
+    },
+    {
+      "label": "Grave of the Fireflies",
+      "value": "tt0095327"
+    },
+    {
+      "label": "Indiana Jones and the Last Crusade",
+      "value": "tt0097576"
+    }
+  ]
+}

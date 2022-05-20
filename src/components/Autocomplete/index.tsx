@@ -1,36 +1,62 @@
 import React from "react";
+import { highlighter } from "../../utils/highligher";
 import { Dropdown, DropdownOption } from "./components/Dropdown";
 import { Input } from "./components/Input";
 import "./styles.css";
 
 export interface AutocompleteProps {
-  label: string;
+  placeholder: string;
+  onSearchAsync(text: string): Promise<DropdownOption[]>;
+  onSelect: (option: DropdownOption) => void;
 }
 
-export function Autocomplete({ label }: AutocompleteProps) {
-  const [text, setText] = React.useState("");
-  const [options, setOptions] = React.useState<DropdownOption<string>[]>([
-    {
-      label: "Element 1",
-      value: "element-1",
-    },
-    {
-      label: "Element 2",
-      value: "element-2",
-    },
-  ]);
+export function Autocomplete({
+  placeholder,
+  onSearchAsync,
+  onSelect,
+}: AutocompleteProps) {
+  const inputRef = React.useRef<HTMLInputElement>(null);
+  const [options, setOptions] = React.useState<DropdownOption[]>([]);
 
-  const inputId = React.useId();
+  const searchByInput = (text: string) => {
+    if (!text.trim()) {
+      return setOptions([]);
+    }
 
-  const handleChange = () => {
-    setText(text);
+    // NOTE: I'm using this function to enable the browser
+    // find the best time to do the searching withoult lags in of rendering
+    window.requestIdleCallback(() => {
+      onSearchAsync(text.trim())
+        .then((data) =>
+          data.map((data) => ({
+            highlight: highlighter(text, data.label),
+            value: data.value,
+            label: data.label,
+          }))
+        )
+        .then((data) => setOptions(data));
+    });
+  };
+
+  const selectOption = (option: DropdownOption) => {
+    if (inputRef.current) {
+      inputRef.current.value = option.label;
+      inputRef.current.focus();
+    }
+
+    onSelect(option);
+    setOptions([]);
   };
 
   return (
     <div className="autocomplete-container">
-      <Input id={inputId} onChange={handleChange} placeholder={label} />
+      <Input
+        ref={inputRef}
+        onChange={searchByInput}
+        placeholder={placeholder}
+      />
 
-      <Dropdown options={options} />
+      <Dropdown options={options} onSelect={selectOption} />
     </div>
   );
 }

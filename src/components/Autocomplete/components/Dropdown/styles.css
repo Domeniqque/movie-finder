@@ -6,11 +6,15 @@
 
 .dropdown-list li {
   padding: 0.8rem 0.5rem;
-  font-size: 14px;
+  font-size: 16px;
   transition: background 100ms ease-out;
 }
 
 .dropdown-list li:hover {
   background-color: #eee;
   cursor: pointer;
+}
+
+.dropdown-list .highlight {
+  color: red;
 }
